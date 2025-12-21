@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Resume of K Anil Kumar - SAP ABAP Software Engineer with 4+ years experience">
+    <meta name="keywords" content="SAP ABAP Developer, Software Engineer, Cognizant, HCSC, Resume, Anil Kumar">
+    <meta name="author" content="K Anil Kumar">
+    <meta name="robots" content="index, follow">
+    <title>K Anil Kumar - SAP ABAP Software Engineer</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <style>
+        :root {
+            --primary: #0d6efd;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --accent: #6366f1;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--light);
+            color: #333;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .header {
+            position: relative;
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+            overflow: hidden;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.4);
+            z-index: 1;
+        }
+        .header > .container {
+            position: relative;
+            z-index: 2;
+        }
+        .header h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .header .title {
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+        .header iframe {
+   background-color: transparent !important;
+   display: block;
+   border-radius: 10%; 
+   width: 160px; 
+   height: 200px;
+   border: 5px solid transparent;
+    padding: 10px; /* Optional: add padding so content doesn't touch the border area */
+    background-color: transparent; /* Example background color */
+}
+        .contact-info a {
+            color: white;
+            font-size: 1.2rem;
+            margin: 0 1rem;
+            transition: all 0.3s;
+        }
+        .contact-info a:hover {
+            color: var(--accent);
+            transform: translateY(-3px);
+        }
+        .section {
+            background: white;
+            border-radius: 15px;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.4s;
+        }
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 1.8rem;
+            position: relative;
+            padding-bottom: 0.8rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 80px;
+            height: 5px;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            border-radius: 3px;
+        }
+        p, ul, .achievement-item {
+            text-align: justify !important;
+            hyphens: auto;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.2rem;
+        }
+        .skill-item {
+            background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
+            padding: 1.2rem;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 600;
+            transition: all 0.4s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .skill-item:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-8px) scale(1.05);
+        }
+        .achievement-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+            padding: 1rem;
+            background: #f0f9ff;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        .achievement-item:hover {
+            background: #dbeafe;
+            transform: translateX(10px);
+        }
+        .achievement-item i {
+            font-size: 1.8rem;
+            margin-right: 1.2rem;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .download-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            background: var(--accent);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            box-shadow: 0 8px 20px rgba(99,102,241,0.4);
+            transition: all 0.3s;
+        }
+        .download-btn:hover {
+            transform: scale(1.1);
+            background: #4f46e5;
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 2.5rem 0;
+            margin-top: 4rem;
+        }
+        @media (max-width: 768px) {
+            .header h1 { font-size: 3rem; }
+            .contact-info a { display: block; margin: 0.8rem 0; }
+            .section-title::after { left: 0; transform: none; }
+        }
+        @media print {
+            body { background: white; }
+            #particles-js, .download-btn { display: none; }
+            .section { box-shadow: none; border: 1px solid #ddd; }
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <!-- Header -->
+    <header class="header">
+  <div class="container d-flex align-items-center justify-content-center gap-3">
+<!--  <iframe src="https://drive.google.com/file/d/1nulWtdWj5wCts82BYcAbgyVe3tp0RLj0/preview" style="object-fit: cover;"></iframe> -->
+  <img src="https://drive.google.com/file/d/1nulWtdWj5wCts82BYcAbgyVe3tp0RLj0/view?usp=sharing">
+<!--     style="border-radius: 10%; width: 160px; height: 200px; object-fit: cover; background-color: transparent;" -->
+    <div class="text-white text-center">
+      <h1 class="mb-0">K Anil Kumar</h1>
+      <h2 class="mb-0">SAP ABAP Software Engineer</h2><br>
+      <div class="contact-info">
+        <a href="tel:+917032252476"><i class="fas fa-phone-alt me-3"></i>+91 7032252476</a><br>
+        <a href="mailto:Anil.kenchugundu@gmail.com"><i class="fas fa-envelope me-3"></i>Anil.kenchugundu@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <!-- Download PDF Button (click to print as PDF) -->
+<!--    <a href="javascript:window.print()" class="download-btn shadow-lg" -->
+<a href="https://drive.google.com/file/d/1NS_VifUTN8Y1eC6Vu8Dq3nGCvyUfGnBQ/view?usp=sharing" class="download-btn shadow-lg" download>
+        <i class="fas fa-download me-2"></i>Download PDF
+    </a>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Professional Summary -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-user-tie me-5"></i>Professional Summary</h2>
+            <p>As a Software Engineer with over 4 years of experience at Cognizant Technology Solutions, I specialize in SAP ABAP development, enhancement, and production support. Proficient in ALV Reports, Open SQL, CDS Views, Data Dictionary (DDIC), Smart Forms, BDC, and Background Jobs. Experienced in modern tools like Visual Studio Code and GitHub Copilot to enhance code quality and development efficiency. Delivered high-quality solutions in SLA-driven environments with strong domain expertise in Healthcare (HCSC), focusing on performance optimization and SAP best practices.</p>
+        </section>
+
+        <!-- Experience -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-briefcase me-3"></i>Professional Experience</h2>
+            <h5>Software Engineer - SAP ABAP</h5>
+            <p class="text-muted">Cognizant Technology Solutions, Hyderabad | December 2021 – Present</p>
+            <ul>
+                <li>4+ years of hands-on experience in SAP ABAP development and support within the Health Care Service Corporation (HCSC) domain.</li>
+                <li>Designed and developed ALV reports, managed data via DDIC/Open SQL, and implemented data conversions using BDC/BAPI.</li>
+                <li>Conducted unit testing, code reviews, and resolved incidents efficiently to meet SLAs.</li>
+                <li>Automated operational reports (Balancing, License, Network Status) using background jobs, significantly reducing manual effort and improving accuracy.</li>
+                <li>Managed healthcare provider master data (network participation, validity dates, locations, specialties, licenses) using standard and custom Z-tables.</li>
+                <li>Collaborated in offshore delivery, requirement analysis, technical design, and ABAP enhancements.</li>
+            </ul>
+        </section>
+
+        <!-- Project -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-project-diagram me-3"></i>Key Project</h2>
+            <h5>Health Care Service Corporation (HCSC)</h5>
+            <p class="text-muted">Client Locations: Illinois, Montana, Texas, New Mexico, Oklahoma</p>
+            <p><strong>Role:</strong> Software Engineer – SAP ABAP | <strong>Tasks:</strong> Development & Production Support</p>
+            <p><strong>Technologies:</strong> SAP ECC 6.0, S/4 HANA, DB2, HANA DB, Visual Studio Code, Squirrel</p>
+        </section>
+
+        <!-- Skills -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-cogs me-3"></i>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Data Dictionary (Tables, Structures, Views)</div>
+                <div class="skill-item">ALV Reporting</div>
+                <div class="skill-item">Background Jobs & BDC (Session Method)</div>
+                <div class="skill-item">Smart Forms</div>
+                <div class="skill-item">CDS Views</div>
+                <div class="skill-item">Open SQL & Debugger</div>
+                <div class="skill-item">File Handling Interfaces</div>
+                <div class="skill-item">BAPI, BADI, Implicit Enhancements</div>
+                <div class="skill-item">OOP ABAP, Module Pool, LSMW</div>
+                <div class="skill-item">Runtime Analysis (SAT/SE30)</div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-graduation-cap me-3"></i>Education</h2>
+            <ul>
+                <li><strong>B.Tech</strong> - Arjun College of Technology & Science, Ranga Reddy (May 2014)</li>
+                <li><strong>Intermediate</strong> - Kottam Manikyamma Junior College, Andhra Pradesh (March 2010)</li>
+                <li><strong>Secondary School</strong> - Tagore High School, Andhra Pradesh (March 2008)</li>
+            </ul>
+        </section>
+
+        <!-- Achievements -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-trophy me-3"></i>Achievements & Recognition</h2>
+            <div class="achievement-item"><i class="fas fa-star"></i> Silver Stellar Star Award for outstanding performance</div>
+            <div class="achievement-item"><i class="fas fa-thumbs-up"></i> Client appreciation for timely issue resolution and effective support</div>
+            <div class="achievement-item"><i class="fas fa-medal"></i> Recognized by management for consistent high performance</div>
+        </section>
+
+        <!-- Personal Details -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-user me-3"></i>Personal Details</h2>
+            <ul>
+                <li><strong>Date of Birth:</strong> June 21, 1993</li>
+                <li><strong>Nationality:</strong> Indian</li>
+                <li><strong>Languages Known:</strong> English, Telugu, Kannada</li>
+                <li><strong>Location:</strong> Hyderabad, India</li>
+            </ul>
+        </section>
+
+        <!-- Declaration -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-file-signature me-3"></i>Declaration</h2>
+            <p>I hereby declare that the information provided above is true to the best of my knowledge.</p>
+            <p class="mt-4"><strong>Place:</strong> Hyderabad<br><strong>Date:</strong> December 21, 2025<br><strong>K Anil Kumar</strong></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2025 K Anil Kumar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Particles.js Init -->
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#ffffff" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.5, "random": true },
+                "size": { "value": 3, "random": true },
+                "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 },
+                "move": { "enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out" }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": { "onhover": { "enable": true, "mode": "repulse" }, "resize": true }
+            },
+            "retina_detect": true
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
